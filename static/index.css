@@ -34,6 +34,7 @@ body {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .BOX-D {
@@ -60,6 +61,7 @@ body {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -ms-flex: 1;
+    flex: 1;
 }
 
 .BOX,
@@ -138,6 +140,7 @@ body {
     border-top: 1px solid #b8dfe6;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto 100%;
 }
 
 .t1,
@@ -145,7 +148,6 @@ body {
 .t3,
 .t4,
 .t5 {
-    background-size: auto 100%;
     background-image: url(./image/ClickBefore.png);
 }
 
@@ -160,6 +162,18 @@ body {
 
 .bl {
     border-left: 1px solid #b8dfe6;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @-ms-keyframes flash {
@@ -201,6 +215,7 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -ms-tap-highlight-color: rgba(0, 0, 0, 0);
     -ms-user-select: none;
+    user-select: none;
 }
 
 #GameScoreLayer {
