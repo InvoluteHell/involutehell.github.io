@@ -140,6 +140,7 @@ body {
     border-top: 1px solid #b8dfe6;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto 100%;
 }
 
 .t1,
@@ -147,7 +148,6 @@ body {
 .t3,
 .t4,
 .t5 {
-    background-size: auto 100%;
     background-image: url(./image/ClickBefore.png);
 }
 
