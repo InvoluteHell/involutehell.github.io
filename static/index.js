@@ -230,9 +230,9 @@ function refreshGameLayer(box, loop, offset) {
     }
     box.style[transitionDuration] = '150ms';
 
-    var bls = document.querySelectorAll('.block')
-    for (var bl of bls) {
-        var ranDisrupt = Math.floor(Math.random() * 1000) % 6;
+    let bls = document.querySelectorAll('.block')
+    for (let bl of bls) {
+        let ranDisrupt = Math.floor(Math.random() * 1000) % 6;
         if (bl.className.search(/t\d/) === -1) {
             if (bl.style.backgroundImage === '') {
                 bl.style.backgroundImage = `url("./static/image/ganrao${ranDisrupt}.jpg")`;
