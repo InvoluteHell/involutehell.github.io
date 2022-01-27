@@ -228,7 +228,7 @@ function refreshGameLayer(box, loop, offset) {
         box.y = 0;
         box.style[transform] = 'translate3D(0,' + box.y + 'px,0)';
     }
-    box.style[transitionDuration] = '150ms';
+    box.style[transitionDuration] = '0ms';
 
     let bls = document.querySelectorAll('.block')
     for (let bl of bls) {
